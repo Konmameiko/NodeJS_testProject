@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { UserService } from './logical/user/user.service';
 import { UserController } from './logical/user/user.controller';
 
+// 根模块
 @Module({
   imports: [],
   controllers: [AppController, UserController],
