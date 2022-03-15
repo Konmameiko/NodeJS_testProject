@@ -3,8 +3,8 @@ import { Injectable } from '@nestjs/common';
 // 服务
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'hi,boy.What a fucking day.';
+  getHello(): object {
+    return {'text':'hi,boy.What a fucking day.'};
   }
 
   sayHi(): string{

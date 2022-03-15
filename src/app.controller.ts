@@ -1,4 +1,4 @@
-import { Controller, Get, Query, Request } from '@nestjs/common';
+import { Controller, Get, Query, Render, Request } from '@nestjs/common';
 import { AppService } from './app.service';
 
 // 控制器
@@ -7,7 +7,8 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
+  @Render('default/index')
+  getHello(): object {
     return this.appService.getHello();
   }
 
