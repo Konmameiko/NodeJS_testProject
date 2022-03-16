@@ -37,8 +37,8 @@ export class AppController {
 
 
   //动态匹配  当没有前面的符合时  执行此路由
-  @Get(':id')
-  chackUser2(): string {
-    return '1234';
-  }
+  // @Get(':id')
+  // chackUser2(): string {
+  //   return '1234';
+  // }
 }

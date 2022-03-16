@@ -1,13 +1,12 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UserService } from './logical/user/user.service';
-import { UserController } from './logical/user/user.controller';
+import { PostsModule } from './posts/posts.module';
 
 // 根模块
 @Module({
-  imports: [],
-  controllers: [AppController, UserController],
-  providers: [AppService, UserService],
+  imports: [PostsModule],
+  controllers: [AppController],
+  providers: [AppService,],
 })
 export class AppModule {}
